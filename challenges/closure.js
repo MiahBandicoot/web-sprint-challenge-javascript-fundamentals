@@ -17,8 +17,16 @@ function myFunction() {
 myFunction();
 
 // Explanation: 
-
+"When the nested function calls 'internal', it can look up to the parent function or even the window to find the variable it's looking for as long as it remains within its scope. If the variable was inside a different function and outside of nestedFunctions scope, then the return would be undefined."
 
 /* Task 2: Counter */
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+function summation(peram){
+let total = 0;
+for (let i=1; i<=peram; i++){
+  total+= i;
+}
+return total
+}
+console.log (summation(4))
